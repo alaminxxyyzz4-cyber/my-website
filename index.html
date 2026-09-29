@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার বাংলা ওয়েবসাইট</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans Bengali", "Segoe UI", sans-serif;
+      background: #f5f7f6;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #075e54, #128c7e);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 36px; margin-bottom: 8px; }
+    header p { font-size: 17px; opacity: .95; }
+
+    nav {
+      background: #064e47;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+    .hero {
+      background: white;
+      border-radius: 16px;
+      padding: 35px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.07);
+      margin-bottom: 30px;
+    }
+    .hero h2 { color: #075e54; margin-bottom: 10px; }
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 22px;
+      background: #128c7e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #075e54; }
+
+    section { margin-bottom: 35px; }
+    section h2 {
+      color: #075e54;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+    .card h3 { color: #128c7e; margin-bottom: 8px; }
+
+    .about, .contact {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+
+    footer {
+      background: #064e47;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 28px; }
+      nav a { display: inline-block; margin: 4px 7px; }
+      .hero { padding: 25px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>আমার বাংলা ওয়েবসাইট</h1>
+    <p>জ্ঞান • শিক্ষা • প্রযুক্তি • ইসলামিক তথ্য</p>
+  </header>
+
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#services">বিষয়সমূহ</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+
+  <main class="container">
+
+    <div class="hero" id="home">
+      <h2>স্বাগতম! 👋</h2>
+      <p>
+        এটি আমার প্রথম বাংলা Mini Website।
+        এখানে আমি বিভিন্ন জ্ঞান, শিক্ষা, প্রযুক্তি ও ইসলামিক বিষয়
+        সহজভাবে তুলে ধরব।
+      </p>
+      <a class="btn" href="#services">আরও দেখুন</a>
+    </div>
+
+    <section id="services">
+      <h2>আমাদের বিষয়সমূহ</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>📚 শিক্ষা</h3>
+          <p>শিক্ষামূলক বিভিন্ন বিষয় সহজ ভাষায় জানুন ও শিখুন।</p>
+        </div>
+
+        <div class="card">
+          <h3>💻 প্রযুক্তি</h3>
+          <p>কম্পিউটার, ওয়েব ডেভেলপমেন্ট ও প্রযুক্তি সম্পর্কে জানুন।</p>
+        </div>
+
+        <div class="card">
+          <h3>🕌 ইসলামিক</h3>
+          <p>ইসলামিক ইতিহাস, ঘটনা ও শিক্ষামূলক বিষয় পড়ুন।</p>
+        </div>
+
+        <div class="card">
+          <h3>💡 জ্ঞান</h3>
+          <p>প্রতিদিন নতুন কিছু শেখার জন্য বিভিন্ন তথ্য ও ধারণা।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>আমাদের সম্পর্কে</h2>
+      <div class="about">
+        <p>
+          এই ওয়েবসাইটটি শেখার উদ্দেশ্যে তৈরি করা হয়েছে।
+          ভবিষ্যতে এখানে আরও অনেক নতুন কনটেন্ট, ছবি এবং প্রয়োজনীয়
+          ফিচার যোগ করা যাবে।
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>যোগাযোগ</h2>
+      <div class="contact">
+        <p><strong>নাম:</strong> আপনার নাম</p>
+        <p><strong>ইমেইল:</strong> your@email.com</p>
+        <p><strong>Facebook:</strong> আপনার Facebook Page</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© ২০২৬ আমার বাংলা ওয়েবসাইট | সর্বস্বত্ব সংরক্ষিত</p>
+  </footer>
+
+</body>
+</html>
